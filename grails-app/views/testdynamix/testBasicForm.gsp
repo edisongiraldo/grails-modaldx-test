@@ -1,61 +1,60 @@
-
 		<meta name="layout" content="main"/>
+
+		<h1>ModalBox call a BASIC FORM within typically a html page</h1>
 		
-		
-		<h1>ModalBox call RemoteForm Function wrap around your form + form action</h1>
-		
-		
-		<!-- Basic Modal FORM -->
-		<!--  Your own form - your own custom actions, it just loads up form in popup -->
-		
-		
+		<!--  	
+				Basic Modal FORM :
+		  		Your own form - your own custom actions, it just loads up form in popup 
+		  		if it is a form upon submission the results take over on main screen 
+		 		thus modal form gets posted to main screen minimal config required 
+		-->
 		<button href="#ModalDynamixBASIC" class="btn btn-block btn-success" 
-		role="button" data-toggle="modal"  onclick="runThisButtonCheck()" title="Create New MyUser">
+		role="button" data-toggle="modal"  title="Create New MyUser">
  		Generate New MyUser Remote Form Example?</button>
  		
- 		
- 		<g:javascript>
- 	 	var myCloneMyDiv=''
- 	 	function runThisButtonCheck() {
- 	 		myCloneMyDiv=$('#MyDiv1').clone();   
- 	 	 	$('#MyDiv1').show();
- 	 	}
- 	 	</g:javascript>
- 		
- 		<label>Field 1: showing nothing is changing</label>
- 		<input type=text name="abc" value="Put something in here and add value"/>
- 		
- 		<div id="MyDiv1">
-  			<g:modalForm
- 				id="BASIC"
- 				title="My Modal Title"
- 			formType="modalBasic"
- 				
- 				modalTemplatePage="/myLocalDomain/formBasic"
- 				
- 				
 
- 			
+		<!--  
+			 	Main DIV to display form for above button 
+			 	it can be called anything
+			 	The fields:
+			 	
+			 	-> ID				-	Must match above href
+			 	 
+			 	-> modalTemplate 	- 	This must be left as is or overriden - 
+			 					   		this loads up basic modal wrapper for your form below:
+			 					   
+				-> modalTemplatePage -	This is the path to where your TEMPLATE file is containing:
+									 	The entire form including <form methods and submit buttons>
+				
+		 -->
+
+ 		<div id="MyBasicDiv1">
+ 			<g:modalForm
+ 				id="ModalDynamixBASIC"
+ 				title="My Modal Title"
+ 				modalTemplate="/modaldynamix/modalbasic"
+ 				modalTemplatePage="/myLocalDomain/formBasic"
+ 		 			
  			/>
  		</div>
+
  		
  
  
- 		<!--  The buttons must be kept outside of actual form - otherwise you are conflicting two form tags -->
- 		
- 		
- 		<!--  Main FORM on this page that will be doing core function -->
- 		<g:form name="mynextForm" action="step2">
- 		
+ 		<!--  
+ 			  IF ABOVE IS A FORM AND BELOW IS A FORM ?
+ 		      This makes no sense since in this scenario your:
+ 		      Form below will update to the results of modalbox form.
+ 		      You may wish to look at another one of the methods of this plugin!
+ 		      
+ 		 -->
  		 
- 		<div id="MyDiv">
- 			<!--  PLEASE NOTE THIS NOW MATCHES UP WITH divId+'DISPLAY' added within plugin -->
- 			<!--  always ensure the render page and returnController above match actual URL in this MyDiv call  -->
- 			<!--  this needs to render since the plugin will render the same page upon update -->
- 			<g:render template='/testdynamix/MyDivDisplay' />
- 		</div>
- 		
- 		</g:form>
- 		
+ 		 
+ 		SOME HTML PAGE............<br/>
+ 		........................<br/>
+ 		........................<br/>
+ 		........................<br/>
+ 		........................<br/>
+ 		Contains above button which kicks off a pop up form people fill it in, results takes over this page.
  		
  		

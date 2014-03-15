@@ -1,5 +1,5 @@
 
-<g:form name="${attrs.formId }" id="1"  controller="MyLocalDomain" action="save">
+<g:form name="${attrs.id }" id="1"  controller="MyLocalDomain" action="save">
 <fieldset class="form">
 
 <div class="fieldcontain ${hasErrors(bean: myLocalDomainInstance, field: 'myUsers', 'error')} ">
