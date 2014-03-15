@@ -18,9 +18,6 @@
  				returnController="testdynamix"
  			
  			
- 				queryController="modaldynamix"
- 				queryAction="getAjaxCall"
- 			
  				modalTemplatePage="/myLocalDomain/formSelfPost"
  				modalTemplate='/modaldynamix/modalSelfPostForm'
  			

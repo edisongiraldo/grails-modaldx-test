@@ -2,7 +2,7 @@
 
 
 
-<g:form name="${attrs.formId }"   controller="${attrs.submitController }" action="${attrs.submitAction}">
+<g:form name="${params.formId }"   controller="${params.submitController }" action="${params.submitAction}">
 <fieldset class="form">
 
 <div class="fieldcontain ${hasErrors(bean: myLocalDomainInstance, field: 'myUsers', 'error')} ">
@@ -16,6 +16,6 @@
 
 	</fieldset>
 	<fieldset class="buttons">
-		<g:submitButton name="create"  class="save" value="${attrs.submitValue}" />
+		<g:submitButton name="create"  class="save" value="${params.submitValue}" />
 	</fieldset>
 </g:form>

@@ -16,14 +16,9 @@
  				close="XX"
  				
  				
- 				queryController="modaldynamix"
- 				queryAction="getAjaxCall"
- 			
- 				modalRemoteTemplate="/modaldynamix/modalRemoteForm"
- 				
  				modalTemplatePage="/myLocalDomain/form"
  				
- 				modalTemplate='/modaldynamix/modalcreate'
+ 				modalTemplate='/modaldynamix/modalRemoteForm'
  			
  				domain="grails.modaldx.test.MyLocalDomain"
 

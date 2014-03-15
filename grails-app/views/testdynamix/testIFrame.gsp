@@ -40,7 +40,7 @@
  		<!--  this is a template file in this path on your local project that you have named as above -->
  		<!--  inside it is your form - take a look at this examples one to better understand -->
  		<div id="MyIframeDiv1">
-  			<g:render template='/testdynamix/"MyIframeDivForm' />
+  			<g:render template='/testdynamix/MyIframeDivForm' />
  		</div>
  		
  
@@ -60,7 +60,7 @@
  			<!--  this needs to render since the plugin will render the same page upon update -->
  			<!--  like above the file is called the divname BUT ENDS with Display -->
  			<!--  This is the fields for your form in this case a very basic one field form -->
- 			<g:render template='/testdynamix/"MyIframeDivDisplay' />
+ 			<g:render template='/testdynamix/MyIframeDivDisplay' />
  		</div>
 
  		
