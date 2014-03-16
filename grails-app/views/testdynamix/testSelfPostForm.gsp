@@ -13,10 +13,10 @@
 		 --> 
 		
 		<g:genModalButton 
-		id="ModalDynamixSPECIALFORM"
+		id="ModalDynamixSELFPOSTFORM"
 		divId="MySelfPostDiv1"
 		title="Create New MyUser"
-		value="Generate New MyUser Remote Form Example?"
+		value="Generate New MyUser"
 		/>
 		
 		

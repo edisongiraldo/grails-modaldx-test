@@ -1,8 +1,8 @@
  		
   			<g:modalForm
  				
- 				id="ModalDynamixSELFPOST"
- 				formId="MyForm"
+ 				id="ModalDynamixSELFPOSTFORM"
+ 				formId="MyFormssss"
  				
  				title="My Modal Title"
  				
