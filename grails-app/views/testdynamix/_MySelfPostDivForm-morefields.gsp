@@ -6,6 +6,13 @@
  				
  				title="My Modal Title"
  				
+ 				
+ 				
+ 				submitController="MyLocalDomain" 
+ 				submitAction="save"
+ 				submitValue="Save Modal Form and update existing form no refreshing"
+ 			
+ 			
  			
  				divId="MySelfPostDiv"
  				returnController="testdynamix"

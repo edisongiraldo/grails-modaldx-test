@@ -10,7 +10,7 @@
 		 --> 
 		
 		<g:genModalButton 
-		id="ModalDynamixSPECIALFORM"
+		id="ModalDynamixBASIC"
 		divId="MyBasicDiv1"
 		title="Create New MyUser"
 		value="Generate New MyUser Remote Form Example?"
@@ -20,8 +20,7 @@
 
 		<!--  
 			 	Main DIV to display form for above button 
-			 	it can be called anything
-			 	The fields:
+			 	must match above divId
 			 	
 			 	-> ID
 			 	Must match above href
