@@ -9,28 +9,20 @@
 		
 		<b>Both Divs below have to load in templates, because upon refresh those very templates are called on</b><br><br>
 		
-		<!--  Default Modal button to load up modal page - notice the HREF  -->
-		<!--  ModalDynamix matches actual modal form loaded up in modalcreate gsp -->
-		<!--  the SPECIALFORM matches ID of g:modalForm -->
-		<!--  The only thing different is the onClick -->
-		<!--  which runs custom java script that does two things -->
-		<!--  clones MyDiv1 (content) + shows MyDiv1 -->
-		<!--  the show is required for when you open/close modal pages -->
+		<!--  g:genModalButton loads up a button that triggers modalbox
+		  		ID -> must match the ID of the id set further within the DIVS templates
+		  		divId -> This is the divId put above your main form that contains the modalbox itself and the form within it
+		  		title -> hover title of your new button
+		  		value -> display text in the button	
+		 --> 
 		
-		
-		<!--  TEST REMOTE FORM ALREADY COMES WITH FORM TAGS  -->
-		<!--  ALL YOU NEED ARE THE FIELDS i.e. _forms.gsp template of a given controller -->
-		<!--  save being its submitAction (default action for _form.gsp) -->
-		
-		<button href="#ModalDynamixSPECIALFORM" class="btn btn-block btn-success" 
-		role="button" data-toggle="modal"  onclick="runThisIframeButtonCheck()" title="Create New MyUser">
- 		Generate New MyUser Remote Form Example?</button>
-
- 		
- 		<!--  now lets load up the top java script which just runs the above onclick  -->
- 		<!--  and shows MyDiv1 -->
- 		<g:showTopScript scriptName="runThisIframeButtonCheck" divId="MyIframeDiv1" />
- 		
+		<g:genModalButton 
+		id="ModalDynamixSPECIALFORM"
+		divId="MyIframeDiv1"
+		title="Create New MyUser"
+		value="Generate New MyUser Remote Form Example?"
+		/>
+	 		
  		<!--  MyIframeDivForm could and should be your own naming convention and MUST be different per any set -->
  		<!--  its the secondary to actual DIV below called MyIframeDivForm -->
  		<!--  this is basically your modal FORM Page  -->

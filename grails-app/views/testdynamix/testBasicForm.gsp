@@ -2,15 +2,20 @@
 
 		<h1>ModalBox call a BASIC FORM within typically a html page</h1>
 		
-		<!--  	
-				Basic Modal FORM :
-		  		Your own form - your own custom actions, it just loads up form in popup 
-		  		if it is a form upon submission the results take over on main screen 
-		 		thus modal form gets posted to main screen minimal config required 
-		-->
-		<button href="#ModalDynamixBASIC" class="btn btn-block btn-success" 
-		role="button" data-toggle="modal"  title="Create New MyUser">
- 		Generate New MyUser Remote Form Example?</button>
+		<!--  g:genModalButton loads up a button that triggers modalbox
+		  		ID -> must match the ID of the id set further within the DIVS templates
+		  		divId -> This is the divId put above your main form that contains the modalbox itself and the form within it
+		  		title -> hover title of your new button
+		  		value -> display text in the button	
+		 --> 
+		
+		<g:genModalButton 
+		id="ModalDynamixSPECIALFORM"
+		divId="MyBasicDiv1"
+		title="Create New MyUser"
+		value="Generate New MyUser Remote Form Example?"
+		/>
+		
  		
 
 		<!--  
@@ -18,13 +23,16 @@
 			 	it can be called anything
 			 	The fields:
 			 	
-			 	-> ID				-	Must match above href
+			 	-> ID
+			 	Must match above href
 			 	 
-			 	-> modalTemplate 	- 	This must be left as is or overriden - 
-			 					   		this loads up basic modal wrapper for your form below:
+			 	-> modalTemplate 		
+			 	This must be left as is or overriden - 
+			 	this loads up basic modal wrapper for your form below:
 			 					   
-				-> modalTemplatePage -	This is the path to where your TEMPLATE file is containing:
-									 	The entire form including <form methods and submit buttons>
+				-> modalTemplatePage 
+				This is the path to where your TEMPLATE file is containing:
+				The entire form including <form methods and submit buttons>
 				
 		 -->
 
