@@ -4,5 +4,3 @@ plugin.xml
 *.zip
 *.log
 target-eclipse
-target
-web-app/WEB-INF
