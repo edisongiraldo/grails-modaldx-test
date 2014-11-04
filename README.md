@@ -58,7 +58,7 @@ If your site is already bootstrapped then no need to load that up.
 Please refer to [grails-modaldx-test](https://github.com/vahidhedayati/grails-modaldx-test) to see this being used and where all the below examples were taken from.
 
 
-
+## Plugin decsription
 
 [ModalDynamix](https://github.com/vahidhedayati/modaldynamix) is a Grails plugin which makes use of jquery, bootstrap and modalbox to load various types of forms  Self Posting,I Frame, Remote Forms and normal calls via ModalBox, upon trigger save or close depending on type of call, the underlying form is updated with new values without page refreshes.'
  
